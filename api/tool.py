@@ -11,33 +11,44 @@ class MysqlConfig():
         self.charset = "utf8"
 
 
-class Config():
+class Config:
     def __init__(self):
         self.mysql_config = MysqlConfig()
 
 
-def execute(sql):
-    """
-    exxcute slq
-    :param sql:
-    :return:
-    """
-    config = Config().mysql_config
-    print("connect database;")
-    cnn = pymysql.connect(host=config.host,
+class Tool:
+    def __init__(self):
+        self.fetchall = self.fetchone = self.fetchmany = None
+
+    @staticmethod
+    def execute(sql):
+        """
+        exxcute slq
+        :param sql:
+        :return:
+        """
+        config = Config().mysql_config
+        print("connect database;")
+        cnn = pymysql.connect(host=config.host,
                               port=config.port,
                               user=config.user,
                               passwd=config.passwd,
                               db=config.db,
                               charset=config.charset)
-    cur = cnn.cursor()
-    cur.execute(sql)
-    cnn.commit()
-    cur.close()
-    cnn.close()
-    print("close connection;")
+        cur = cnn.cursor()
+        if 'insert'.upper() in sql.upper():
+            cur.execute(sql)
+            cnn.commit()
+        if 'select'.upper() in sql.upper():
+            cur.execute(sql)
+            Tool.fetchone = cur.fetchone()
+            Tool.fetchall = cur.fetchall()
+            Tool.fetchmany = cur.fetchmany()
+        cur.close()
+        cnn.close()
+
+        print("close connection;")
 
 
 if __name__ == '__main__':
-    sql = """INSERT INTO users (NAME,PASSWORD) VALUES ('root','root')"""
-    execute(sql)
+    pass

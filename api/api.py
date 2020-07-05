@@ -47,15 +47,21 @@ def login():
     result = {}
     status = 0
     massage = ""
-    username = request.get_json()["username"].strip()
-    password = request.get_json()["password"].strip()
-    num = tool.execute("select * from users where name=%s and password")
-    if num == 0:
-        status = 0
-        massage = "登录失败"
-    else:
-        status = 1
-        massage = "登陆成功"
+    try:
+        username = request.get_json()["username"].strip()
+        password = request.get_json()["password"].strip()
+        sql = "select * from users where name='%s' and password='%s'" % (username, password)
+        num = tool.execute(sql)
+        print(sql, num)
+        if num == 0:
+            status = 0
+            massage = "登录失败"
+        else:
+            status = 1
+            massage = "登陆成功"
+    except Exception as e:
+        print(e)
+
     result["status"] = status
     result["massage"] = massage
     return result
