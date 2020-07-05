@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+# encoding: utf-8
+# @author   : changhsing
+# @time     : 2020/7/5 21:39
+# @site     : 
+# @file     : test.py
+# @software : PyCharm
 import pymysql
 
 
@@ -16,7 +23,7 @@ class Config():
         self.mysql_config = MysqlConfig()
 
 
-def execute(sql):
+def execute():
     """
     exxcute slq
     :param sql:
@@ -25,19 +32,14 @@ def execute(sql):
     config = Config().mysql_config
     print("connect database;")
     cnn = pymysql.connect(host=config.host,
-                              port=config.port,
-                              user=config.user,
-                              passwd=config.passwd,
-                              db=config.db,
-                              charset=config.charset)
-    cur = cnn.cursor()
-    cur.execute(sql)
-    cnn.commit()
-    cur.close()
-    cnn.close()
-    print("close connection;")
-
+                          port=config.port,
+                          user=config.user,
+                          passwd=config.passwd,
+                          db=config.db,
+                          charset=config.charset)
+    cursor = cnn.cursor()
+    s = cursor.execute("select * from users")
+    print(cursor.fetchone())
 
 if __name__ == '__main__':
-    sql = """INSERT INTO users (NAME,PASSWORD) VALUES ('root','root')"""
-    execute(sql)
+    execute()

@@ -45,9 +45,21 @@ def login():
     request format {username:"",password:""}
     :return:
     """
+    result = {}
+    status = 0
+    massage = ""
     username = request.get_json()["username"].strip()
     password = request.get_json()["password"].strip()
-
+    num = tool.execute("select * from users where name=%s and password")
+    if num == 0:
+        status = 0
+        massage = "登录失败"
+    else:
+        status = 1
+        massage = "登陆成功"
+    result["status"] = status
+    result["massage"] = massage
+    return result
 
 
 if __name__ == '__main__':
