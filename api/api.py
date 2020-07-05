@@ -1,7 +1,6 @@
 from flask import Flask, request
-from api import tool
+import tool
 from flask_cors import *
-
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
@@ -38,7 +37,7 @@ def register():
     return result
 
 
-@app.route('/login',methods=['post'])
+@app.route('/login', methods=['post'])
 def login():
     """
     登陆
