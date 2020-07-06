@@ -23,14 +23,18 @@ def register():
     massage = ""
     username = request.get_json()["username"].strip()
     password = request.get_json()["password"].strip()
-    email = request.get_json()["email"].strip()
+    email = ""
+    try:
+        email = request.get_json()["email"].strip()
+    except Exception as e:
+        print(e)
     print(username, password, email)
     try:
         SQL = """INSERT INTO users (NAME,PASSWORD,EMAIL) VALUES ('%s','%s','%s') """ % (username, password, email)
         print(SQL)
         Tool().execute(SQL)
         status = 1
-        massage = ""
+        massage = "注册成功"
     except Exception as e:
         print(e)
         status = 0
