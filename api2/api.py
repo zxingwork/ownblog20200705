@@ -27,6 +27,8 @@ def register():
     # get password and password from http request;
     username = request.get_json()['username']
     password = request.get_json()['password']
+
+    # email is not requisite
     try:
         email = request.get_json()['email']
     except:
