@@ -27,7 +27,10 @@ def register():
     # get password and password from http request;
     username = request.get_json()['username']
     password = request.get_json()['password']
-    email = request.get_json()['email']
+    try:
+        email = request.get_json()['email']
+    except:
+        email = ""
 
     # connect the mysql
     con = pymysql.connect(host='120.24.148.131',
