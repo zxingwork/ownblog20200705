@@ -3,5 +3,7 @@ from enum import unique
 
 
 @unique
-class Error(Enum):
+class Status(Enum):
+    success = '0000'
     emptyError = '0001'
+    mysqlError = '0003'

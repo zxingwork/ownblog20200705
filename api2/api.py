@@ -2,12 +2,14 @@ from flask import Flask
 from flask import request
 from flask_cors import *
 import pymysql
+try: from api2.common import Status
+except: from common import Status
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 
-@app.route('/register', ['post'])
+@app.route('/register', methods=['post'])
 def register():
     """
     register a new user
@@ -36,6 +38,7 @@ def register():
                           charset='utf8')
     cursor = con.cursor()
 
+    # insert register user to database
     if username is not None and password is not None:
         SQL = 'insert into %s (name,password,email) values (%s,%s,%s)' % (user_table, username, password, email)
         try:
@@ -44,11 +47,20 @@ def register():
             cursor.close()
             con.close()
             massage = '注册成功'
-            status = '0'
+            status = Status.success
         except Exception as e:
             print(e)
             massage = '注册失败'
-            status = '4'
+            status = Status.mysqlError
     else:
-        status = '5'
+        massage = '注册失败'
+        status = Status.emptyError
 
+    # return
+    result['massage'] = massage
+    result['status'] = status
+    return result
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=9527, debug=True)
