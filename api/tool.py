@@ -20,8 +20,8 @@ class Tool:
     def __init__(self):
         self.fetchall = self.fetchone = self.fetchmany = None
 
-    @staticmethod
-    def execute(sql):
+    # @staticmethod
+    def execute(self, sql):
         """
         exxcute slq
         :param sql:
@@ -37,13 +37,16 @@ class Tool:
                               charset=config.charset)
         cur = cnn.cursor()
         if 'insert'.upper() in sql.upper():
+            print("插入语句: %s" % sql)
             cur.execute(sql)
             cnn.commit()
         if 'select'.upper() in sql.upper():
+            print("查询语句: %s" % sql)
             cur.execute(sql)
-            Tool.fetchone = cur.fetchone()
-            Tool.fetchall = cur.fetchall()
-            Tool.fetchmany = cur.fetchmany()
+            self.fetchone = cur.fetchone()
+            self.fetchall = cur.fetchall()
+            print(cur.fetchall())
+            self.fetchmany = cur.fetchmany()
         cur.close()
         cnn.close()
 
