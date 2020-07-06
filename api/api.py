@@ -1,5 +1,5 @@
 from flask import Flask, request
-import tool
+from api.tool import *
 from flask_cors import *
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -25,7 +25,7 @@ def register():
     try:
         SQL = """INSERT INTO users (NAME,PASSWORD,EMAIL) VALUES ('%s','%s','%s') """ % (username, password, email)
         print(SQL)
-        tool.execute(SQL)
+        Tool.execute(SQL)
         status = 1
         massage = ""
     except Exception as e:
@@ -51,7 +51,7 @@ def login():
         username = request.get_json()["username"].strip()
         password = request.get_json()["password"].strip()
         sql = "select * from users where name='%s' and password='%s'" % (username, password)
-        num = tool.execute(sql)
+        num = Tool.execute(sql)
         print(sql, num)
         if num == 0:
             status = 0
