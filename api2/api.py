@@ -45,25 +45,26 @@ def register():
 
     # insert register user to database
     if username is not None and password is not None:
-        SQL = 'insert into %s (name,password,email) values (%s,%s,%s)' % (user_table, username, password, email)
+        SQL = "insert into %s (name,password,email) values ('%s','%s','%s')" % (user_table, username, password, email)
         try:
             cursor.execute(SQL)
             con.commit()
             cursor.close()
             con.close()
             massage = '注册成功'
-            status = Status.success
+            status = Status.success.value
         except Exception as e:
             print(e)
             massage = '注册失败'
-            status = Status.mysqlError
+            status = Status.mysqlError.value
     else:
         massage = '注册失败'
-        status = Status.emptyError
+        status = Status.emptyError.value
 
     # return
     result['massage'] = massage
     result['status'] = status
+    print(massage, status)
     return result
 
 
