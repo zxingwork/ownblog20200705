@@ -89,9 +89,10 @@ def login():
 
     # search record in database
     if username is not None and password is not None:
+        SQl = f"select * from {user_table} where name='{username}' and password='{password}'"
+        print(SQl)
         try:
-            SQl = "select * from %s where name='%s' and password='%s'" % (user_table, username, password)
-            con = Mysql.connect()
+            con = Mysql().connect()
             cursor = con.cursor()
             cursor.execute(SQl)
             status = Status.success.value
@@ -104,6 +105,10 @@ def login():
     else:
         status = Status.emptyError.value
         massage = '登陆失败'
+
+    result['status'] = status
+    result['massage'] = massage
+    return result
 
 
 if __name__ == '__main__':
