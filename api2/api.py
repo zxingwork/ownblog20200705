@@ -38,12 +38,7 @@ def register():
         email = ""
 
     # connect the mysql
-    con = pymysql.connect(host='120.24.148.131',
-                          port=3306,
-                          db='admin1',
-                          user='root',
-                          passwd='ZXSSJDY',
-                          charset='utf8')
+    con = Mysql().connect()
     cursor = con.cursor()
 
     # insert register user to database
