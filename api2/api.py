@@ -2,8 +2,11 @@ from flask import Flask
 from flask import request
 from flask_cors import *
 import pymysql
-try: from api2.common import *
-except: from common import *
+
+try:
+    from api2.common import *
+except:
+    from common import *
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -21,7 +24,7 @@ def register():
     massage = ''
     status = ''
 
-    #table massage
+    # table massage
     user_table = 'users'
 
     # get password and password from http request;
@@ -46,6 +49,7 @@ def register():
     # insert register user to database
     if username is not None and password is not None:
         SQL = "insert into %s (name,password,email) values ('%s','%s','%s')" % (user_table, username, password, email)
+        print(SQL)
         try:
             cursor.execute(SQL)
             con.commit()
