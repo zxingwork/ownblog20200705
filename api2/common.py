@@ -1,7 +1,10 @@
 from enum import Enum
 from enum import unique
 import pymysql
-from api2.Logger import *
+try:
+    from api2.Logger import Logger
+except:
+    from Logger import *
 
 
 log = Logger('app.log', level='debug')
