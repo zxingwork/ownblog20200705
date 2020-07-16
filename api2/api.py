@@ -85,6 +85,7 @@ def login():
     login by {username, password}
     :return:
     """
+
     # return massage
     result = {}
     status = ''
@@ -108,9 +109,12 @@ def login():
             con = Mysql().connect()
             cursor = con.cursor()
             cursor.execute(SQl)
-            status = Status.success.value
-            massage = '登陆成功'
-            log.logger.debug(massage)
+            if len(cursor.fetchall()) != 0:
+                status = Status.success.value
+                massage = '登陆成功'
+            else:
+                status = Status.mysqlError.value
+                massage = '登陆失败'
         except Exception as e:
             status = Status.mysqlError.value
             massage = '登陆失败'

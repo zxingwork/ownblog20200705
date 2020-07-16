@@ -94,3 +94,59 @@ seq:6318329174532976089 start
 2020-07-16 21:01:57,232 - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.04403996467590332s
 2020-07-16 21:01:57,233 - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
 2020-07-16 21:01:57,233 - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+[2020-07-16 22:36:20,225] - [DEBUG]: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:36:20,225] - [DEBUG]: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:36:20,226] - [DEBUG]: select * from users where name='124234344325445454533423' and password='zxss321312jdy'
+[2020-07-16 22:36:20,226] - [DEBUG]: select * from users where name='124234344325445454533423' and password='zxss321312jdy'
+[2020-07-16 22:36:20,267] - [DEBUG]: Mysql execute sql:"select * from users where name='124234344325445454533423' and password='zxss321312jdy'", cost time:0.04103732109069824s
+[2020-07-16 22:36:20,267] - [DEBUG]: Mysql execute sql:"select * from users where name='124234344325445454533423' and password='zxss321312jdy'", cost time:0.04103732109069824s
+[2020-07-16 22:36:20,268] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:36:20,268] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:36:27,551] - [DEBUG]: request:{'username': 'eqweqwe', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:36:27,551] - [DEBUG]: request:{'username': 'eqweqwe', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:36:27,551] - [DEBUG]: select * from users where name='eqweqwe' and password='zxss321312jdy'
+[2020-07-16 22:36:27,551] - [DEBUG]: select * from users where name='eqweqwe' and password='zxss321312jdy'
+[2020-07-16 22:36:27,592] - [DEBUG]: Mysql execute sql:"select * from users where name='eqweqwe' and password='zxss321312jdy'", cost time:0.041036128997802734s
+[2020-07-16 22:36:27,592] - [DEBUG]: Mysql execute sql:"select * from users where name='eqweqwe' and password='zxss321312jdy'", cost time:0.041036128997802734s
+[2020-07-16 22:36:27,592] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:36:27,592] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:36:32,924] - [DEBUG]: request:{'username': 'qe42asda', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:36:32,924] - [DEBUG]: request:{'username': 'qe42asda', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:36:32,924] - [DEBUG]: select * from users where name='qe42asda' and password='zxss321312jdy'
+[2020-07-16 22:36:32,924] - [DEBUG]: select * from users where name='qe42asda' and password='zxss321312jdy'
+[2020-07-16 22:36:32,969] - [DEBUG]: Mysql execute sql:"select * from users where name='qe42asda' and password='zxss321312jdy'", cost time:0.04403877258300781s
+[2020-07-16 22:36:32,969] - [DEBUG]: Mysql execute sql:"select * from users where name='qe42asda' and password='zxss321312jdy'", cost time:0.04403877258300781s
+[2020-07-16 22:36:32,969] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:36:32,969] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:37:50,944] - [DEBUG]: request:{'username': 'qe42asda', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:37:50,944] - [DEBUG]: request:{'username': 'qe42asda', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:37:50,945] - [DEBUG]: select * from users where name='qe42asda' and password='zxss321312jdy'
+[2020-07-16 22:37:50,945] - [DEBUG]: select * from users where name='qe42asda' and password='zxss321312jdy'
+[2020-07-16 22:37:50,991] - [DEBUG]: Mysql execute sql:"select * from users where name='qe42asda' and password='zxss321312jdy'", cost time:0.0460667610168457s
+[2020-07-16 22:37:50,991] - [DEBUG]: Mysql execute sql:"select * from users where name='qe42asda' and password='zxss321312jdy'", cost time:0.0460667610168457s
+[2020-07-16 22:37:50,991] - [DEBUG]: return:{'status': '0003', 'massage': '登陆失败'}
+[2020-07-16 22:37:50,991] - [DEBUG]: return:{'status': '0003', 'massage': '登陆失败'}
+[2020-07-16 22:37:54,570] - [DEBUG]: request:{'username': 'qe42asda', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:37:54,570] - [DEBUG]: request:{'username': 'qe42asda', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+[2020-07-16 22:37:54,570] - [DEBUG]: select * from users where name='qe42asda' and password='zxss321312jdy'
+[2020-07-16 22:37:54,570] - [DEBUG]: select * from users where name='qe42asda' and password='zxss321312jdy'
+[2020-07-16 22:37:54,612] - [DEBUG]: Mysql execute sql:"select * from users where name='qe42asda' and password='zxss321312jdy'", cost time:0.04203653335571289s
+[2020-07-16 22:37:54,612] - [DEBUG]: Mysql execute sql:"select * from users where name='qe42asda' and password='zxss321312jdy'", cost time:0.04203653335571289s
+[2020-07-16 22:37:54,612] - [DEBUG]: return:{'status': '0003', 'massage': '登陆失败'}
+[2020-07-16 22:37:54,612] - [DEBUG]: return:{'status': '0003', 'massage': '登陆失败'}
+[2020-07-16 22:38:32,714] - [DEBUG]: request:{'username': '124233QERWREeweqw324E423', 'password': '4534534'}
+[2020-07-16 22:38:32,714] - [DEBUG]: request:{'username': '124233QERWREeweqw324E423', 'password': '4534534'}
+[2020-07-16 22:38:32,715] - [DEBUG]: select * from users where name='124233QERWREeweqw324E423' and password='4534534'
+[2020-07-16 22:38:32,715] - [DEBUG]: select * from users where name='124233QERWREeweqw324E423' and password='4534534'
+[2020-07-16 22:38:32,762] - [DEBUG]: Mysql execute sql:"select * from users where name='124233QERWREeweqw324E423' and password='4534534'", cost time:0.04704141616821289s
+[2020-07-16 22:38:32,762] - [DEBUG]: Mysql execute sql:"select * from users where name='124233QERWREeweqw324E423' and password='4534534'", cost time:0.04704141616821289s
+[2020-07-16 22:38:32,762] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:38:32,762] - [DEBUG]: return:{'status': '0000', 'massage': '登陆成功'}
+[2020-07-16 22:38:38,173] - [DEBUG]: request:{'username': '124233QERWREeweqw324E4231', 'password': '4534534'}
+[2020-07-16 22:38:38,173] - [DEBUG]: request:{'username': '124233QERWREeweqw324E4231', 'password': '4534534'}
+[2020-07-16 22:38:38,173] - [DEBUG]: select * from users where name='124233QERWREeweqw324E4231' and password='4534534'
+[2020-07-16 22:38:38,173] - [DEBUG]: select * from users where name='124233QERWREeweqw324E4231' and password='4534534'
+[2020-07-16 22:38:38,215] - [DEBUG]: Mysql execute sql:"select * from users where name='124233QERWREeweqw324E4231' and password='4534534'", cost time:0.04203653335571289s
+[2020-07-16 22:38:38,215] - [DEBUG]: Mysql execute sql:"select * from users where name='124233QERWREeweqw324E4231' and password='4534534'", cost time:0.04203653335571289s
+[2020-07-16 22:38:38,215] - [DEBUG]: return:{'status': '0003', 'massage': '登陆失败'}
+[2020-07-16 22:38:38,215] - [DEBUG]: return:{'status': '0003', 'massage': '登陆失败'}
