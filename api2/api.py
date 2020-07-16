@@ -1,12 +1,14 @@
 from flask import Flask
 from flask import request
 from flask_cors import *
-from api2.Logger import Logger
+
 import time
 
 try:
+    from api2.Logger import Logger
     from api2.common import *
 except:
+    from Logger import *
     from common import *
 
 log = Logger('app.log', level='debug')
