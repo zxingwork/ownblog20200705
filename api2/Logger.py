@@ -17,8 +17,8 @@ class Logger(object):
         'error': logging.ERROR,
         'crit': logging.CRITICAL
     }  # 日志级别关系映射
-    f1 = '%(asctime)s - %(levelname)s: %(message)s'
-    f2 = '%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
+    f1 = '[%(asctime)s] - [%(levelname)s]: %(message)s'
+    f2 = '[%(asctime)s] - %(pathname)s[line:%(lineno)d] - [%(levelname)s]: %(message)s'
 
     def __init__(self, filename, level='info', when='D', backCount=3,
                  fmt=f1):
