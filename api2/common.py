@@ -1,7 +1,10 @@
 from enum import Enum
 from enum import unique
 import pymysql
+from api2.Logger import *
 
+
+log = Logger('app.log', level='debug')
 
 @unique
 class Status(Enum):
@@ -39,3 +42,14 @@ class Mysql:
                               passwd=self.__passwd,
                               charset=self.charset)
         return con
+
+
+# def seq(func):
+#     s = ''.join(random.sample(string.digits+string.digits+string.digits, 19))
+#
+#     def wrapTheFunction():
+#         log.logger.debug(f'\nseq:{s} start')
+#         func()
+#         log.logger.debug(f'seq"{s} end\n')
+#     return wrapTheFunction
+#

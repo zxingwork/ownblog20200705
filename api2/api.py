@@ -1,17 +1,21 @@
 from flask import Flask
 from flask import request
 from flask_cors import *
-import pymysql
+from api2.Logger import Logger
+import time
 
 try:
     from api2.common import *
 except:
     from common import *
 
+log = Logger('app.log', level='debug')
+
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 
+# @seq
 @app.route('/register', methods=['post'])
 def register():
     """
@@ -28,6 +32,8 @@ def register():
     user_table = 'users'
 
     # get password and password from http request;
+    request_data = request.get_json()
+    log.logger.debug(f'request:{request_data}')
     username = request.get_json()['username']
     password = request.get_json()['password']
 
@@ -37,26 +43,28 @@ def register():
     except:
         email = ""
 
-    # connect the mysql
-    con = Mysql().connect()
-    cursor = con.cursor()
-
     # insert register user to database
     if username is not None and password is not None:
         SQL = "insert into %s (name,password,email) values ('%s','%s','%s')" % (user_table, username, password, email)
-        print(SQL)
         try:
+            # connect the mysql
+            start_time = time.time()
+            con = Mysql().connect()
+            cursor = con.cursor()
             cursor.execute(SQL)
             con.commit()
             massage = '注册成功'
             status = Status.success.value
         except Exception as e:
-            print(e)
+            log.logger.error(e)
             massage = '注册失败'
             status = Status.mysqlError.value
         finally:
             cursor.close()
             con.close()
+            end_time = time.time()
+            log.logger.debug(f'Mysql execute sql:"{SQL}", cost time:{end_time - start_time}s')
+
     else:
         massage = '注册失败'
         status = Status.emptyError.value
@@ -64,10 +72,11 @@ def register():
     # return
     result['massage'] = massage
     result['status'] = status
-    print(massage, status)
+    log.logger.debug(f'return:{result}')
     return result
 
 
+# @seq
 @app.route('/login', methods=['post'])
 def login():
     """
@@ -83,30 +92,40 @@ def login():
     user_table = 'users'
 
     # receive login massage
+    request_data = request.get_json()
+    log.logger.debug(f'request:{request_data}')
     username = request.get_json()['username']
     password = request.get_json()['password']
 
     # search record in database
     if username is not None and password is not None:
         SQl = f"select * from {user_table} where name='{username}' and password='{password}'"
-        print(SQl)
+        log.logger.debug(SQl)
         try:
+            start_time = time.time()
             con = Mysql().connect()
             cursor = con.cursor()
             cursor.execute(SQl)
             status = Status.success.value
             massage = '登陆成功'
-            print('登陆成功')
+            log.logger.debug(massage)
         except Exception as e:
             status = Status.mysqlError.value
             massage = '登陆失败'
-            print('登陆失败', e)
+            log.logger.error(massage + e)
+        finally:
+            cursor.close()
+            con.close()
+            end_time = time.time()
+            log.logger.debug(f'Mysql execute sql:"{SQl}", cost time:{end_time - start_time}s')
+
     else:
         status = Status.emptyError.value
         massage = '登陆失败'
 
     result['status'] = status
     result['massage'] = massage
+    log.logger.debug(f'return:{result}')
     return result
 
 
