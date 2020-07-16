@@ -1,0 +1,96 @@
+2020-07-16 18:40:39,257 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:48] - DEBUG: insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')
+2020-07-16 18:40:39,278 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:68] - DEBUG: return:{'massage': '注册成功', 'status': '0000'}
+2020-07-16 18:55:18,376 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 18:55:18,376 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com'), cost time:-0.04503989219665527
+2020-07-16 18:55:18,380 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 18:56:11,919 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:56] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 18:56:11,919 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:63] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.03903460502624512
+2020-07-16 18:56:11,919 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:72] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:17:20,297 - D:\PycharmProjects\ownblog20200705\api2\common.py[line:53] - DEBUG: 
+seq:9400473798506628171 start
+2020-07-16 19:17:20,297 - D:\PycharmProjects\ownblog20200705\api2\common.py[line:53] - DEBUG: 
+seq:9400473798506628171 start
+2020-07-16 19:18:35,790 - D:\PycharmProjects\ownblog20200705\api2\common.py[line:53] - DEBUG: 
+seq:6318329174532976089 start
+2020-07-16 19:18:35,790 - D:\PycharmProjects\ownblog20200705\api2\common.py[line:53] - DEBUG: 
+seq:6318329174532976089 start
+2020-07-16 19:23:45,456 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:23:45,456 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:23:45,457 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.04403853416442871
+2020-07-16 19:23:45,457 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.04403853416442871
+2020-07-16 19:23:45,457 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:23:45,457 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:25:01,065 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:25:01,065 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:25:01,065 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.04303765296936035
+2020-07-16 19:25:01,065 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.04303765296936035
+2020-07-16 19:25:01,065 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:25:01,065 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:25:27,742 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:25:27,742 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:25:27,742 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.044039011001586914
+2020-07-16 19:25:27,742 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:-0.044039011001586914
+2020-07-16 19:25:27,743 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:25:27,743 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:26:54,757 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:26:54,757 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:26:54,757 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04403877258300781s
+2020-07-16 19:26:54,757 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04403877258300781s
+2020-07-16 19:26:54,757 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:26:54,757 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:28:48,352 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:28:48,352 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:28:48,353 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04303860664367676s
+2020-07-16 19:28:48,353 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04303860664367676s
+2020-07-16 19:28:48,353 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:28:48,353 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:30:07,294 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:30:07,294 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:57] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:30:07,294 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04103660583496094s
+2020-07-16 19:30:07,294 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:64] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04103660583496094s
+2020-07-16 19:30:07,294 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:30:07,294 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:73] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:32:32,848 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:36] - DEBUG: request:{'username': '12423434432544533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 19:32:32,848 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:36] - DEBUG: request:{'username': '12423434432544533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 19:32:32,894 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:32:32,894 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:32:32,894 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:66] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04604148864746094s
+2020-07-16 19:32:32,894 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:66] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.04604148864746094s
+2020-07-16 19:32:32,895 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:75] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:32:32,895 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:75] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 19:37:23,821 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 19:37:23,821 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:44:03,707 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:44:03,707 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:51:19,312 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:51:19,312 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:52:11,766 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:36] - DEBUG: request:{'username': '12423434432544533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 20:52:11,766 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:36] - DEBUG: request:{'username': '12423434432544533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 20:52:11,815 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:52:11,815 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:59] - ERROR: (1062, "Duplicate entry '12423434432544533423' for key 'users_name_uindex'")
+2020-07-16 20:52:11,816 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:66] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.05004453659057617s
+2020-07-16 20:52:11,816 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:66] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('12423434432544533423','zxss321312jdy','173123123129@163.com')", cost time:0.05004453659057617s
+2020-07-16 20:52:11,816 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:75] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 20:52:11,816 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:75] - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 20:53:04,153 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:36] - DEBUG: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 20:53:04,153 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:36] - DEBUG: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 20:53:04,207 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:66] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.05404782295227051s
+2020-07-16 20:53:04,207 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:66] - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.05404782295227051s
+2020-07-16 20:53:04,208 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:75] - DEBUG: return:{'massage': '注册成功', 'status': '0000'}
+2020-07-16 20:53:04,208 - D:\PycharmProjects\ownblog20200705\api2\api.py[line:75] - DEBUG: return:{'massage': '注册成功', 'status': '0000'}
+2020-07-16 20:58:03,941 - DEBUG: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 20:58:03,941 - DEBUG: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 20:58:03,988 - ERROR: (1062, "Duplicate entry '124234344325445454533423' for key 'users_name_uindex'")
+2020-07-16 20:58:03,988 - ERROR: (1062, "Duplicate entry '124234344325445454533423' for key 'users_name_uindex'")
+2020-07-16 20:58:03,988 - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.04604053497314453s
+2020-07-16 20:58:03,988 - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.04604053497314453s
+2020-07-16 20:58:03,988 - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 20:58:03,988 - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 21:01:57,188 - DEBUG: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 21:01:57,188 - DEBUG: request:{'username': '124234344325445454533423', 'password': 'zxss321312jdy', 'email': '173123123129@163.com'}
+2020-07-16 21:01:57,232 - ERROR: (1062, "Duplicate entry '124234344325445454533423' for key 'users_name_uindex'")
+2020-07-16 21:01:57,232 - ERROR: (1062, "Duplicate entry '124234344325445454533423' for key 'users_name_uindex'")
+2020-07-16 21:01:57,232 - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.04403996467590332s
+2020-07-16 21:01:57,232 - DEBUG: Mysql execute sql:"insert into users (name,password,email) values ('124234344325445454533423','zxss321312jdy','173123123129@163.com')", cost time:0.04403996467590332s
+2020-07-16 21:01:57,233 - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
+2020-07-16 21:01:57,233 - DEBUG: return:{'massage': '注册失败', 'status': '0003'}
