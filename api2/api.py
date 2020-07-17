@@ -46,7 +46,7 @@ def register():
         email = ""
 
     # insert register user to database
-    if username is not None and password is not None:
+    if username is not None and password is not None and len(username) != 0 and len(password)  != 0:
         SQL = "insert into %s (name,password,email) values ('%s','%s','%s')" % (user_table, username, password, email)
         try:
             # connect the mysql
