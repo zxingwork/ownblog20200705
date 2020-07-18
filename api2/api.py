@@ -16,7 +16,7 @@ log = Logger('app.log', level='debug')
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
-
+# test
 # @seq
 @app.route('/register', methods=['post'])
 def register():
