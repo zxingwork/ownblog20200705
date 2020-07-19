@@ -19,15 +19,15 @@ class Status(Enum):
 class Mysql:
     ALiyun_host = '120.24.148.131'
     TencentYun_host = '106.55.33.244'
-    ALiyun_passwd = "ZXSSJDY"
+    ALiyun_passwd = "zxssjdy111899"
     TencentYun_passwd = "zxssjdy111899"
 
     def __init__(self,
-                 host=TencentYun_host,
+                 host=ALiyun_host,
                  port=3306,
                  db='admin1',
                  user='root',
-                 passwd= TencentYun_passwd,
+                 passwd= ALiyun_passwd,
                  charset='utf8'):
         self.__host = host
         self.__port = port
